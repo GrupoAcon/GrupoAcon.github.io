@@ -1,0 +1,206 @@
+*{
+    /* width: 100%; */
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+
+}
+
+body{
+    background-color: rgba(126, 255, 158, 0.342);
+    color: rgb(0, 0, 0);
+}
+
+.FAndFinca{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+}.FAndFinca div{
+    display: block;
+    justify-content: center;
+}
+.FAndFinca input{
+    width: 90px;
+    height: 15px;
+}
+.FAndFinca select{
+    height: 16px;
+    width: 90px;
+}
+/* Evaluador */
+.Eval {
+    text-align: center;
+    position: relative;
+}
+#evaluador{
+    width: 22.4rem;
+}
+
+.articleCurva{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    font-size: 11px;
+    padding-left: 0.5rem;
+}
+
+#sectionCurva{
+    padding-top: 1.5rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: min-content;
+
+}
+.articleCurva input{
+    width: 80px;
+}
+.articleCurva #h2Curva{
+    position: absolute;
+    left: 14%;
+}
+.sectionColor{
+    padding-top: 1.5rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: min-content;
+}
+#h2Color{
+    position: absolute;
+    left: 65%;
+}
+.Curvap {
+    width: 70px;
+    text-align: center;
+}
+.Curvap input{
+    width: 78%;
+}
+.colornp{
+    width: 90px;
+    height: 137px;
+}
+.colorp{
+    /* border: 1px solid; */
+    width: 63px;
+}
+.colorp input{
+    width: 70%;
+
+}
+.CurvaDate{
+    width: 90px;
+    
+}
+.CurvaDate label{
+    font-size: 11px;
+}
+
+/* Condicon  */
+.articleCondicion{
+    position: relative;
+    left: 49%;
+    bottom: 1.9rem;
+    width: min-content;
+}
+.articleCondicion h2 {
+    font-size: 16px;
+}
+.sectionCondicion{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 40%;
+
+}
+.sectionCondicion label{
+    font-size: 11px;
+}
+.porciento{
+    display: flex;
+}
+/* .promediobix{
+    position: relative;
+    left: 3.2rem;
+    bottom: 1.3rem;   
+} */
+
+.brixPromedio {
+    text-align: center;
+    width: 33%;
+
+
+}
+.brixPromedio input{
+    width: 48px;
+}
+.articleCondicion h2{
+    position: absolute;
+    bottom: 95%;
+    left: 2%;
+}
+
+.articleDefectos{
+    position: relative;
+    bottom: 2rem;
+    width: min-content;
+    border-top: 1px dotted;
+    
+  
+}
+.articleDefectos h2{
+    font-size: 18px;
+}
+.defecto{
+    font-size: 11px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    width: min-content;
+}
+.defecto div{
+    text-align: center;
+    width: 90px;
+
+}
+.defecto input{
+    width: 70px;
+}
+.defecto div{
+    border: 1px dotted rgba(53, 221, 199, 0.336);
+}
+/* .defecto input[type=text]{
+    display: none;    OCULTO EL INPUTS DE DEFECTOS
+} */
+
+
+
+
+
+/* naight mode  */
+
+.naight{
+    border-radius: 30px;
+    background: rgba(0, 0, 0, 0.233);
+    border: 10x double;
+    width: min-content;
+    margin: auto;
+    padding: 0.2rem;
+    position: fixed;
+    top: 6%;
+    left: 93%;
+}
+.dark-mode {
+    background-color: rgb(5, 5, 5) !important;
+    color: rgb(255, 255, 255) !important;
+}
+.promediobix{
+    font-weight: 600;
+     color: black;
+     border: 2px double;
+     width: 2rem;
+}
+
+.material-symbols-sharp {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 100,
+  'GRAD' 0,
+  'opsz' 28
+}

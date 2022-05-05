@@ -1,0 +1,81 @@
+#corchosis℅, 
+#plaga℅,
+#deforme℅,
+#sombra℅,
+#corona℅,
+#pequeña℅,
+#alta℅,
+#muygrande℅,
+#meristemo℅,
+#quemasol℅,
+#bajobrix℅,
+#calto℅,
+#conica℅{
+    display: none;
+    font-weight: 600;
+}
+
+
+
+#corchosisNum, 
+#plagaNum,
+#deformeNum,
+#sombraNum,
+#coronaNum,
+#pequeñaNum,
+#altaNum,
+#muygrandeNum,
+#meristemoNum,
+#quemasolNum,
+#bajobrixNum,
+#caltoNum,
+#conicaNum{
+    display: none;
+    font-weight: 600;
+
+}
+
+
+#btn_desabled{
+    position: absolute;
+    left: 91.7%;
+    bottom: 39.2%;
+    margin: auto;
+    padding: auto;
+    width: 2rem;
+    font-weight: 800;
+}
+
+
+
+
+#corchosis  
+#plaga 
+#deforme 
+#sombra 
+#corona 
+#pequeña 
+#alta 
+#muygrande 
+#meristemo 
+#quemasol 
+#bajobrix 
+#calto 
+#conica{
+    background: blue;
+}
+
+/* .defecto div div input */
+.caja{
+    
+    box-shadow: 0 0 4px 0 rgb(90, 86, 86);
+} 
+.cajaNone{
+    
+    box-shadow: 0 0 0 0 rgba(90, 86, 86, 0);
+} 
+
+
+.desabled{
+    display: none;
+}

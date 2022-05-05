@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Pagina de Evaluacion de Frutas</title>
+    <link rel="stylesheet" href="css/style2.css">
+    <link rel="stylesheet" href="css/defecto.css">
+    <link rel="stylesheet" href="https://fonts.sandbox.google.com/css2?family=Material+Symbols+Sharp:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="https://fonts.sandbox.google.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="shortcut icon" href="icon.ico" type="image/x-icon">
+
+</head>
+
+<body>
+    <span class="material-symbols-sharp naight">
+        dark_mode
+        </span>
+    <form action="" method="post">
+    
+       <section id="primera"> 
+        <div class="FAndFinca">
+            <div>
+                
+            <label for="Fecha">Fecha</label>
+            <input  name="Fecha" type="text" placeholder="Fecha" value="">
+             
+            </div>  
+            <div class="">
+                
+           
+            <label for="Finca">Finca</label>
+            <select name="Finca" id="Finca">
+                <option value="PTR">PTR</option>
+                <option value="PFR">PFR</option>
+                <option value="PCA">PCA</option>
+               <option value="PCR">PCR</option>
+            </select>
+            </div>
+            <div>
+                
+
+        <label for="Grupo Forza" id="gforza">Grupo Forza</label>
+        <input id="forza" type="text" name="Grupo Forza" placeholder="Grupo Forza">
+    
+        </div>
+<br />
+        </div>
+        <!--dato-->
+        <div id="Eval">
+            <label for="Evaluador">Evaluador</label>
+<br>
+            <input id="evaluador" type="text" placeholder="Nombre .... ">
+        </div>
+        
+        
+            
+        </section>
+        
+        
+            
+     <article class="articleCurva">
+        <h2 id="h2Curva">Curva</h2>
+        <section id="sectionCurva">
+            
+            <div class="CurvaDate">
+                <label for="jumbo">Jumbo 4s</label>
+                <input id="jumbo4s" type="number" placeholder="Jumbo 4s" onblur="curvo(this.res4s);" value="0">
+                <label for="grande">Grande 5s</label>
+                <input value="0" type="number" placeholder="Grande 5s" id="grande5s" onblur="curvo(this.Grande5s);">
+               <label for="">Normal 6s/7s/8s</label>
+                <input type="number" placeholder="Normal 6s/7s/8s" id="normal" onblur="curvo(this.Normal);" value="0">
+                <label for="">Pequeña 9s/10s</label>
+                <input type="number" placeholder="Pequeña 9s/10s" id="pequeña" value="0" onblur="curvo(this.Pequeña);">
+                <label for="">M.pequeña 12s</label>
+                <input type="number" placeholder="Muy pequeña 12s" id="muyPequeña" value="0" onblur="curvo(this.isMpequeña);">
+                <div class="suma" style="display: flex;">
+                    <b for="">Total Frutas:</b>
+                    
+            </div>
+
+                </div>            
+            <div class="Curvap">
+                <label for="">% </label>
+                <input id="℅jumbo4s" type="text" placeholder="%">
+                <label for="">%</label>
+                <input type="text" placeholder="%" id="℅grande5s">
+                <label for="">%</label>
+                <input id="℅normal" type="text" placeholder="%">
+                <label for="">%</label>
+                <input id="℅pequeña" type="text" placeholder="%">
+                <label for="">%</label>
+                <input id="℅muypequeña" type="text" placeholder="%">
+                <input id="sumaTotal" type="text" onblur="curvo(this.Total_suma);" placeholder="Sub Total">
+            </div>
+            
+                
+        </section>
+
+        <!-- TRATANDO DE DIVIDIR Color  -->
+
+        <!-- <article class="articleColor"> -->
+            <h2 id="h2Color">Color</h2>
+            <section class="sectionColor">
+            
+            <div class="colornp">
+                <label for="C.Bajo">C.Bajo</label>
+                <input type="text" id="cbajo" onblur="curvo(this)" placeholder="0-0,25">
+                <label for="C.Normal">C.Normal</label>
+                <input type="text" id="cnormal" onblur="curvo(this)" placeholder="0,5-2">
+                <label for="Gold">Gold</label>
+                <input type="text" id="gold" onblur="curvo(this)" placeholder="3">
+                <label for="C.Alto">C.Alto</label>
+                <input type="text" id="calto" onblur="curvo(this)" placeholder=">3">
+            </div>
+            
+            <div class="colorp">
+                
+                <label for="">℅C.Bajo</label>
+                <input type="text" id="℅cbajo" placeholder="0%">
+                
+                <label for="℅">℅C.Normal</label>
+                <input type="text" id="℅cnormal" placeholder="0%">
+                
+                <label for="℅">℅Gold</label>
+                <input type="text" id="℅gold" placeholder="0%">
+                
+                <label for="℅">℅C.Alto</label>
+                <input type="text" id="℅calto" placeholder="0%">
+                
+            </div>
+            
+            </section>
+        <!-- </article> -->
+        
+    </article>
+    
+    
+    
+    
+    
+   
+   <article class="articleCondicion">
+       <h2>Condición</h2>
+       <section class="sectionCondicion">
+           
+           <div class="">
+                <div id="trans1">
+                    
+                <label for="trans1">Trans1</label>
+               <select name="Trans1" id="trans1">
+                   <option value="Ok">Ok 1</option>
+                   <option value="Baja<1">Baja<1</option>
+                   <option value="Rayos 2">Rayos 2</option>
+                   <option value="Alta>=3">Alta>=3</option>
+               </select>
+
+               </div>
+               
+               <div class="">
+                   <label for="trans2">Trans2</label>
+               <select name="trans2" id="trans2">
+                   <option value="">Ok 1</option>
+                   <option value="">Baja<1</option>
+                   <option value="">Rayos 2</option>
+                   <option value="">Alta>=3</option>
+               </select>
+               
+               </div>
+               
+               <div>
+               <label for="trans3">Trans3</label>
+               <select name="trans3" id="trans3">
+                <option value="">Ok 1</option>
+                <option value="">Baja<1</option>
+                <option value="">Rayos 2</option>
+                <option value="">Alta>=3</option>
+               </select>
+               <b>Brix</b>
+               
+               </div>
+           </div>
+           
+           <div class="brixPromedio">
+               <label for="brix1">brix1</label>
+               <input id="brix1" type="number" placeholder="Brix1">
+               <label for="brix2">brix2</label>
+               <input id="brix2" type="number" placeholder="Brix 2">
+               <label for="brix3">brix3</label>
+               <input id="brix3" type="number" placeholder="Brix3">
+              
+              
+              <!--<input value="validar" id="btn" type="button">-->
+            <div class="porciento">
+                <span class="promediobix" id="porcentage">Brix</span>
+            </div>
+             
+           </div>
+       </section>
+   </article> 
+    
+   
+   <article class="articleDefectos">
+       <h2>Defectos</h2>
+       <section class="defecto">
+           <div class="corchosis_div">
+               <div class="">
+                   <input type="checkbox" name="corchosis" id="corchosis" class="corchosis"><br />
+                   <label for="corchosis">Corchosis</label>
+               </div>
+               <input type="text" id="corchosisNum"  placeholder="Cant Corchosis" value="0" onblur="validation_Of_corchosis(this)">
+               <input type="text" id="corchosis℅" placeholder="℅Corchosis">
+           </div>
+           
+           <div class="plaga_div">
+               <div class="">
+                   <input type="checkbox" name="" id="plaga" class="plaga"><br />
+                   <label for="plaga">Plaga/Daño</label>
+               </div>
+               <input type="text" id="plagaNum" value="0" placeholder="Cant Plagas/Daños" onblur="validation_Of_plaga(this)">
+               <input type="text" id="plaga℅" placeholder="℅Plaga">
+           </div>
+           
+           <div class="deforme_div">
+               <div class="">
+                   <input type="checkbox" name="deforme" id="deforme" class="deforme"><br />
+                   <label for="deforme">F.Deforme</label>
+               </div>
+               <input type="text" id="deformeNum" value="0" placeholder="Cant F.Deforme" onblur="validation_Of_deforme(this)">
+               <input type="text" id="deforme℅" placeholder="℅F.Deforme">
+           </div>
+           
+           <div class="sombra_div">
+               <div>
+                   <input type="checkbox" name="sombra" id="sombra" class="sombra"><br />
+                   <label for="sombra">Sombra</label>
+               </div>
+               <input type="text" id="sombraNum" value="0" placeholder="Cant Sombra" onblur="validation_Of_sombra(this)">
+               <input type="text" id="sombra℅" placeholder="℅Sombra">
+           </div>
+           
+           <div class="corona_div">
+               <div class="">
+                   <input type="checkbox" name="corona" id="corona" class="corona"><br />
+                   <label for="corona">Defecto/Coronas</label>
+               </div>
+               <input type="text" id="coronaNum" placeholder="Cant Defectos Corona" value="0" onblur="validation_Of_corona(this)">
+               <input type="text" id="corona℅" placeholder="℅Corona">
+           </div>
+           
+           <div class="pequeña_div">
+               <div class="">
+                   <input type="checkbox" name="pequeña" id="pequeña" class="pequeña"><br />
+                   <label for="pequeña">F.Pequeña</label>
+               </div>
+               <input type="text" id="pequeñaNum" placeholder="Cant F.Pqueña" value="0" onblur="validation_Of_pequeña(this)">
+               <input type="text" id="pequeña℅" placeholder="℅F.Pequeña">
+           </div>
+           
+           <div class="alta_div">
+               <div class="">
+                   <input type="checkbox" name="alta" id="alta" class="alta"><br />
+                   <label for="alta">TRS Alta</label>
+               </div>
+               <input type="text" id="altaNum" placeholder="Cant TRS.Alta" value="0" onblur="validation_Of_alta(this)">
+               <input type="text" id="alta℅" placeholder="℅TRS.Alta">
+           </div>
+           
+           <div class="muygrande_div">
+               <div class="">
+                   <input type="checkbox" name="muygrande" id="muygrande" class="muygrande"><br />
+                   <label for="muygrande">F.MuyGrande</label>
+               </div>
+               <input type="text" id="muygrandeNum" placeholder="Cant F.Muy Grande" value="0" onblur="validation_Of_muygrande(this)">
+               <input type="text" id="muygrande℅" placeholder="℅F.MuyGrande">
+           </div>
+           
+           <div class="meristemo_div">
+               <div class="">
+                   <input type="checkbox" name="meristemo" id="meristemo" class="meristemo"><br />
+                   <label for="meristemo">F.Meristemo</label>
+               </div>
+               <input type="text" id="meristemoNum" placeholder="Cant F.Meristemo" value="0" onblur="validation_Of_meristemo(this)">
+               <input type="text" id="meristemo℅" placeholder="℅F.Meristemo">
+           </div>
+           
+           <div class="quemasol_div">
+               <div class="">
+                   <input type="checkbox" name="quemasol" id="quemasol" class="quemasol"><br />
+                   <label for="quemasol">Quema Sol</label>
+               </div>
+                <input type="text" id="quemasolNum" placeholder="Cant Quema Sol" value="0" onblur="validation_Of_quemasol(this)">
+                <input type="text" id="quemasol℅" placeholder="℅Quema Sol">
+    
+            </div>
+             
+             <div class="bajobrix_div">
+                 <div class="">
+                     <input type="checkbox" name="" id="bajobrix" class="bajobrix"><br />
+                     <label for="bajobrix">Bajo Brix</label>
+                 </div>
+                 <input type="text" id="bajobrixNum" placeholder="Cant Bajo Brix" value="0" onblur="validation_Of_bajobrix(this)">
+                 <input type="text" id="bajobrix℅" placeholder="℅Bajo Brix">
+             </div>
+             
+             <div class="calto_div">
+                 <div class="">
+                     <input type="checkbox" name="calto" id="calto" class="calto"><br />
+                     <label for="calto">Color Alto</label>
+                 </div>
+                 <input type="text" id="caltoNum" placeholder="Cant F.Alto" value="0" onblur="validation_Of_calto(this)">
+                 <input type="text" id="calto℅" placeholder="℅F.Alto">
+             </div>
+             
+             <div class="conica_div">
+                 <div class="">
+                    <input type="checkbox" name="conica" id="conica" class="conica"><br />
+                    <label for="conica">F.Conica</label>
+                 </div>
+                 <input type="text" id="conicaNum" placeholder="Cant F.Conica" value="0" onblur="validation_Of_conica(this)">
+                 <input type="text" id="conica℅" placeholder="℅F.Conica">
+             </div>
+           
+       </section>
+                
+            
+   </article>
+    
+   <!-- <input type="button" value="" id="btn_desabled">     -->
+   <span class="material-symbols-outlined" id="btn_desabled">
+    delete_sweep
+    </span>
+</form>
+
+
+<script src="js/app.js"></script>
+<script src="js/detalle.js"></script>
+<script src="js/defectos.js"></script>
+
+<script>
+    Weglot.initialize({
+        api_key: 'wg_39cee071f9f3be8888bd6e38d62794ea5'
+    });
+</script>
+
+
+</body>
+
+</html>
