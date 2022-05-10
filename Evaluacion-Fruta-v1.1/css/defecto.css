@@ -1,0 +1,116 @@
+#corchosis℅, 
+#plaga℅,
+#deforme℅,
+#sombra℅,
+#corona℅,
+#pequeña℅,
+#alta℅,
+#muygrande℅,
+#meristemo℅,
+#quemasol℅,
+#bajobrix℅,
+#calto℅,
+#conica℅{
+    display: none;
+    font-weight: 600;
+    width: 80px;
+    height: 10px;
+    text-align: center;
+}
+
+
+
+#corchosisNum, 
+#plagaNum,
+#deformeNum,
+#sombraNum,
+#coronaNum,
+#pequeñaNum,
+#altaNum,
+#muygrandeNum,
+#meristemoNum,
+#quemasolNum,
+#bajobrixNum,
+#caltoNum,
+#conicaNum{
+    display: none;
+    font-weight: 600;
+    width: 80px;
+    height: 10px;
+    text-align: center;
+
+}
+
+
+#btn_desabled{
+    width: 2rem;
+    font-weight: 200; 
+}
+
+
+
+
+#corchosis  
+#plaga 
+#deforme 
+#sombra 
+#corona 
+#pequeña 
+#alta 
+#muygrande 
+#meristemo 
+#quemasol 
+#bajobrix 
+#calto 
+#conica{
+    background: blue;
+}
+
+/* .defecto div div input */
+.caja{
+    background: rgb(255, 225, 179);
+    box-shadow: 0 0 4px 0 rgba(90, 86, 86, 0);
+    width: min-content;
+    
+}
+.defecto label{
+    text-align: center;
+    padding-left: 0.2rem;
+    font-family:  Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+/* .check input{
+    border: 1px solid;
+    width: 100%;
+} */
+
+.cajaNone{
+    
+    box-shadow: 0 0 0 0 rgba(90, 86, 86, 0);
+} 
+
+
+.desabled{
+    display: none;
+}
+
+
+/* lote Block  */
+
+
+.active{
+    background-color: rgba(224, 224, 224, 0.384);
+    border: 1px double rgb(221, 220, 220);
+   border-radius: 2px;
+}
+.defecto div{
+    padding: auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.icons{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3rem;
+    align-items: flex-start;
+}

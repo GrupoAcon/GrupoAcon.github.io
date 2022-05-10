@@ -1,0 +1,92 @@
+body{
+    color: black;
+    /* background: linear-gradient(rgba(155, 228, 238, 0.315), rgb(214, 230, 243), rgba(85, 143, 231, 0.74)); */
+    background: rgb(0, 0, 0);
+    background: linear-gradient(0deg, rgba(55, 255, 98, 0.418) 0%, rgba(102, 207, 255, 0.432) 170%);
+    border: 1px solid;
+    border-radius: 5px;
+    padding-left: 3px;
+}
+
+.item {
+    display:  grid;
+    grid-template-columns: repeat(auto-fit, minmax(90px, 1fr));
+    font-size: 12px auto;
+}
+
+.item div input{
+    width: 80px;
+    height: 12px;
+}
+/* SECT Evaluador */
+#Eval input{
+    width: 88%;
+    border-radius: 5px;
+}
+#Eval{
+    padding-left: 1rem;
+    margin: auto;
+}
+.CurvaDate div{
+    justify-content: center;
+    display: inline-flex;
+    flex-direction: column;
+}
+.item2 {
+    display:  grid;
+    grid-template-columns: repeat(auto-fit, minmax(70px, 1fr));
+    font-size: 13px;
+}
+
+.item2 div input{
+    width: 70px;
+    height: 12px;
+}
+
+
+.item3 {
+    display:  grid;
+    grid-template-columns: repeat(auto-fit, minmax(90px, 1fr));
+    font-size: 11px auto;
+}
+
+.item3 div input{
+    width: 80px;
+    height: 17px;
+}
+
+
+/* naight mode  */
+
+.naight{  
+    width: 2rem;   
+}
+.dark-mode {
+    background: linear-gradient(rgb(53, 51, 51), rgb(13, 14, 15), rgba(35, 38, 43, 0.74));
+    color: rgb(255, 255, 255);
+}
+.promediobix{
+    font-weight: 300;
+     color: rgb(39, 39, 39);
+     border: 2px double;
+     width: auto;
+}
+
+.material-symbols-sharp {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 100,
+  'GRAD' 0,
+  'opsz' 28
+}
+
+
+
+.titulo{
+    font-weight: 800;
+    color: rgb(70, 70, 70);
+    background-color: rgba(255, 255, 190, 0.507);
+    border-radius: 30px;
+    text-align: center;
+    margin: 0.5rem;
+}
